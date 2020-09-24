@@ -46,7 +46,7 @@ import redis
 
 class Connections(object):
     def __init__(self):
-        self.pool = redis.ConnectionPool(host = "redis-main-service", port = 6379)
+        self.pool = redis.ConnectionPool(host="redis-main-service-1", port = 6379)
         
     def get_client(self):
         return redis.Redis(connection_pool = self.pool)
