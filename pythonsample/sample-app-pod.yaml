@@ -10,5 +10,5 @@ metadata:
 spec:
     containers:
         - name: sample-container-1
-          image: dockersreejith/myapp
+          image: dockersreejith/my-app:v1
           imagePullPolicy: IfNotPresent
