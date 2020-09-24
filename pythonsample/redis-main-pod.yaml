@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: "redis-main-pod-1"
+    labels:
+        app: stfs-1
+        name: redis-main-pod
+        
+
+spec:
+    containers:
+        - name: redis-main-container-1
+          image: redis
+          ports:
+           - containerPort: 6379
